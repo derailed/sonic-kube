@@ -1,4 +1,4 @@
-# Sonic Kubernetes
+# SonicKube
 
 <div align="right" style="float:right;margin-top:10px">
  <img src="assets/sonic_k8s.png" width="128px" height="auto"/>
