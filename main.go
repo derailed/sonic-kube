@@ -40,10 +40,7 @@ func main() {
 
 	loadTemplates()
 
-	sonic, err := sonic.Dial(sonicURL)
-	if err != nil {
-		log.Fatalf("Unable to open Sonic UDP connection")
-	}
+	sonic := setupSonic()
 	defer func() {
 		sonic.Conn.Close()
 		close(evtChan)
@@ -53,7 +50,16 @@ func main() {
 	setupTimer(sonic, evtChan)
 
 	moles.Watch(masterURL, up, down)
+
 	<-done
+}
+
+func setupSonic() *sonic.Conn {
+	sonic, err := sonic.Dial(sonicURL)
+	if err != nil {
+		log.Fatalf("Unable to open Sonic UDP connection")
+	}
+	return sonic
 }
 
 func setupTimer(sonic *sonic.Conn, evtChan <-chan int) {
