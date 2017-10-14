@@ -1,5 +1,9 @@
 # Sonic Go
 
+<div align="right" style="margin-top:10px">
+ <img src="assets/sonic_k8s.png" width="128px" height="auto"/>
+</div>
+
 Sample integration of [Sonic-Pi](http://sonic-pi.net/) with [Kubernetes](http://kubernetes.io) events.
 
 The big idea here is to shift the focus of cluster monitoring from your eyes to
