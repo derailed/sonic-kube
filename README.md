@@ -6,7 +6,7 @@
 
 Sample integration of [Sonic-Pi](http://sonic-pi.net/) with [Kubernetes](http://kubernetes.io) events.
 
-The big idea here is to shift the focus of cluster monitoring from your eyes to
+> The big idea here is to shift the focus of cluster monitoring from your eyes to
 your ears.
 
 
