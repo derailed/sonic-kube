@@ -7,7 +7,7 @@
 Sample integration of [Sonic-Pi](http://sonic-pi.net/) with [Kubernetes](http://kubernetes.io) events.
 
 The big idea here is to shift the focus of cluster monitoring from your eyes to
-your hears.
+your ears.
 
 
 This simple application will play different chords based on pod activity in a K8s cluster.
