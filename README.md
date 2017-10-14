@@ -29,7 +29,8 @@ kubectl proxy
 The application will play a chord when pods come in an out of the cluster.
 
 ```shell
-# Launch Sonic Pi
+# First Launch Sonic Pi
+# Then start our application...
 go run main.go
 ```
 
